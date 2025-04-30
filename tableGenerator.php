@@ -11,7 +11,8 @@ function getInputParameters() {
         'priceMin' => 20,
         'priceMax' => 20,
         'discountMin' => 0,
-        'discountMax' => 40
+        'discountMax' => 40,
+        'discountedProductPercentage' => 100
     ];
 
     if (php_sapi_name() === 'cli') {
@@ -27,6 +28,8 @@ function getInputParameters() {
         $params['priceMax'] = isset($_POST['priceMax']) ? (int)$_POST['priceMax'] : $params['priceMax'];
         $params['discountMin'] = isset($_POST['discountMin']) ? (int)$_POST['discountMin'] : $params['discountMin'];
         $params['discountMax'] = isset($_POST['discountMax']) ? (int)$_POST['discountMax'] : $params['discountMax'];
+        $params['discountedProductPercentage'] = isset($_POST['discountedProductPercentage']) ?
+            (int)$_POST['discountedProductPercentage'] : $params['discountedProductPercentage'];
     }
 
     return $params;
@@ -41,6 +44,7 @@ $priceMin = $params['priceMin'];
 $priceMax = $params['priceMax'];
 $discountMin = $params['discountMin'];
 $discountMax = $params['discountMax'];
+$discountedProductPercentage = $params['discountedProductPercentage'];
 
 $prodTableName = "Products";
 $productID = "ProductID";
@@ -64,21 +68,40 @@ while ($row = mysqli_fetch_assoc($result)) {
     $allProducts[] = $row;
 }
 
-// Randomly select products
-$randomProducts = array();
+// Randomly select products and check for duplicates
+$randomProducts = [];
+$selectedProductIds = [];
 shuffle($allProducts);
-$randomProducts = array_slice($allProducts, 0, $targetCount);
 
-//Update each of the random products based on parameters
-foreach ($randomProducts as &$product) {
-    // Adjust initial price by custom range
+foreach ($allProducts as $product) {
+    if (!in_array($product[$productID], $selectedProductIds)) {
+        $selectedProductIds[] = $product[$productID];
+        $randomProducts[] = $product;
+
+        if (count($randomProducts) >= $targetCount) {
+            break;
+        }
+    }
+}
+
+// Calculate how many products should receive a discount
+$numProductsToDiscount = ceil(count($randomProducts) * ($discountedProductPercentage / 100));
+
+// Process each product
+for ($i = 0; $i < count($randomProducts); $i++) {
+    // Adjust initial price for all products
     $adjustmentFactor = (mt_rand(-$priceMin, $priceMax) / 100) + 1;
-    $product['adjusted_initial'] = round($product[$initialPrice] * $adjustmentFactor, 2);
+    $randomProducts[$i]['adjusted_initial'] = round($randomProducts[$i][$initialPrice] * $adjustmentFactor, 2);
 
-    // Apply discount within custom range
-    $discountPercentage = mt_rand($discountMin, $discountMax);
-    $product['discount_pct'] = $discountPercentage;
-    $product['final_adjusted'] = round($product['adjusted_initial'] * (1 - $discountPercentage/100), 2);
+    // Apply discount only to the percentage of products that should get discounts
+    if ($i < $numProductsToDiscount) {
+        $discountPercentage = mt_rand($discountMin, $discountMax);
+    } else {
+        $discountPercentage = 0; // No discount
+    }
+
+    $randomProducts[$i]['discount_pct'] = $discountPercentage;
+    $randomProducts[$i]['final_adjusted'] = round($randomProducts[$i]['adjusted_initial'] * (1 - $discountPercentage/100), 2);
 }
 
 //Create the new table and insert the new products array into it
@@ -123,6 +146,7 @@ mysqli_stmt_close($stmt);
 echo "Successfully created table '$tableName' with " . count($randomProducts) . " products using the following parameters:<br>";
 echo "- Product percentage: $productPercentage%<br>";
 echo "- Price adjustment range: -$priceMin% to +$priceMax%<br>";
+echo "- Percentage of products discounted: $discountedProductPercentage%<br>";
 echo "- Discount range: $discountMin% to $discountMax%";
 
 mysqli_close($conn);

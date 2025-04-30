@@ -44,6 +44,11 @@
             <input type="range" class="form-range" id="productPercentage" name="productPercentage" min="10" max="100" value="75">
         </div>
 
+        <div class="slider-container">
+            <label for="discountedProductPercentage" class="form-label">Percentage of Products to Discount: <span id="discountedProductPercentageValue">100</span>%</label>
+            <input type="range" class="form-range" id="discountedProductPercentage" name="discountedProductPercentage" min="0" max="100" value="100">
+        </div>
+
         <div class="row">
             <div class="col-md-6">
                 <div class="slider-container">
@@ -100,6 +105,10 @@
 
     document.getElementById('discountMax').addEventListener('input', function() {
         document.getElementById('discountMaxValue').textContent = this.value;
+    });
+
+    document.getElementById('discountedProductPercentage').addEventListener('input', function() {
+        document.getElementById('discountedProductPercentageValue').textContent = this.value;
     });
 
     // Form submission
