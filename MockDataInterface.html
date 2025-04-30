@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Data Interface</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 800px;
+            margin-top: 30px;
+        }
+        .slider-container {
+            margin: 20px 0;
+        }
+        .form-range {
+            width: 100%;
+        }
+        #response {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+        .spinner-border {
+            display: none;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="mb-4">Mock Data Generator</h1>
+
+    <form id="mockDataForm">
+        <div class="mb-3">
+            <label for="tableName" class="form-label">Company/Table Name</label>
+            <input type="text" class="form-control" id="tableName" name="tableName" required>
+            <div class="form-text">Enter a name for the new product table (alphanumeric only).</div>
+        </div>
+
+        <div class="slider-container">
+            <label for="productPercentage" class="form-label">Percentage of Products to Include: <span id="productPercentageValue">75</span>%</label>
+            <input type="range" class="form-range" id="productPercentage" name="productPercentage" min="10" max="100" value="75">
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="slider-container">
+                    <label class="form-label">Price Adjustment Range</label>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>-<span id="priceMinValue">20</span>%</span>
+                        <span>+<span id="priceMaxValue">20</span>%</span>
+                    </div>
+                    <input type="range" class="form-range" id="priceMin" name="priceMin" min="0" max="50" value="20">
+                    <input type="range" class="form-range" id="priceMax" name="priceMax" min="0" max="50" value="20">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="slider-container">
+                    <label class="form-label">Discount Range</label>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span id="discountMinValue">0</span>%
+                        <span id="discountMaxValue">40</span>%
+                    </div>
+                    <input type="range" class="form-range" id="discountMin" name="discountMin" min="0" max="75" value="0">
+                    <input type="range" class="form-range" id="discountMax" name="discountMax" min="0" max="75" value="40">
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">
+            Generate Mock Data
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" id="spinner"></span>
+        </button>
+    </form>
+
+    <div id="response" class="mt-4"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Update displayed values for sliders
+    document.getElementById('productPercentage').addEventListener('input', function() {
+        document.getElementById('productPercentageValue').textContent = this.value;
+    });
+
+    document.getElementById('priceMin').addEventListener('input', function() {
+        document.getElementById('priceMinValue').textContent = this.value;
+    });
+
+    document.getElementById('priceMax').addEventListener('input', function() {
+        document.getElementById('priceMaxValue').textContent = this.value;
+    });
+
+    document.getElementById('discountMin').addEventListener('input', function() {
+        document.getElementById('discountMinValue').textContent = this.value;
+    });
+
+    document.getElementById('discountMax').addEventListener('input', function() {
+        document.getElementById('discountMaxValue').textContent = this.value;
+    });
+
+    // Form submission
+    document.getElementById('mockDataForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const form = this;
+        const responseElement = document.getElementById('response');
+        const spinner = document.getElementById('spinner');
+
+        // Show loading spinner
+        spinner.style.display = 'inline-block';
+
+        // Collect form data
+        const formData = new FormData(form);
+
+        // Send AJAX request
+        fetch('tableGenerator.php', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => response.text())
+            .then(data => {
+                // Hide spinner
+                spinner.style.display = 'none';
+
+                // Display response
+                responseElement.style.display = 'block';
+                responseElement.classList.add('alert');
+
+                if (data.includes('Successfully')) {
+                    responseElement.classList.add('alert-success');
+                    responseElement.classList.remove('alert-danger');
+                } else {
+                    responseElement.classList.add('alert-danger');
+                    responseElement.classList.remove('alert-success');
+                }
+
+                responseElement.innerHTML = data;
+            })
+            .catch(error => {
+                // Hide spinner
+                spinner.style.display = 'none';
+
+                // Display error
+                responseElement.style.display = 'block';
+                responseElement.classList.add('alert', 'alert-danger');
+                responseElement.textContent = 'Error: ' + error.message;
+            });
+    });
+</script>
+</body>
+</html>
