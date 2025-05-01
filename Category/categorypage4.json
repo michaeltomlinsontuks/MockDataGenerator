@@ -1,0 +1,81 @@
+{
+  "from": 301,
+  "to": 317,
+  "currentPage": 4,
+  "total": 317,
+  "totalPages": 4,
+  "queryTime": "0.013",
+  "totalTime": "0.017",
+  "partial": false,
+  "canonicalUrl": "/v1/categories(id=\"abcat*\")?show=id,name&pageSize=100&page=4&format=json&apiKey=5FaxuIgE2GAMQmdVYivr4hGb",
+  "categories": [
+    {
+      "id": "abcat0915007",
+      "name": "Trimmers & Groomers"
+    },
+    {
+      "id": "abcat0915008",
+      "name": "Women's Hair Removal"
+    },
+    {
+      "id": "abcat0915009",
+      "name": "Hair Care"
+    },
+    {
+      "id": "abcat0915010",
+      "name": "Oral Care"
+    },
+    {
+      "id": "abcat0915013",
+      "name": "Scales"
+    },
+    {
+      "id": "abcat0916000",
+      "name": "Appliance Parts & Accessories"
+    },
+    {
+      "id": "abcat0916001",
+      "name": "Dishwasher Accessories"
+    },
+    {
+      "id": "abcat0916002",
+      "name": "Washer & Dryer Accessories"
+    },
+    {
+      "id": "abcat0916003",
+      "name": "Range & Oven Accessories"
+    },
+    {
+      "id": "abcat0916004",
+      "name": "Refrigerator Parts & Accessories"
+    },
+    {
+      "id": "abcat0916006",
+      "name": "Refrigerator Water Filters"
+    },
+    {
+      "id": "abcat0916008",
+      "name": "Vacuum & Floor Care Accessories"
+    },
+    {
+      "id": "abcat0916009",
+      "name": "Cleaning Solutions"
+    },
+    {
+      "id": "abcat0916010",
+      "name": "Vacuum & Floor Tools"
+    },
+    {
+      "id": "abcat0916011",
+      "name": "Vacuum Bags"
+    },
+    {
+      "id": "abcat0916013",
+      "name": "Vacuum Filters"
+    },
+    {
+      "id": "abcat0916015",
+      "name": "Microwave Accessories"
+    }
+  ]
+}

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Best Buy API - Product Spec</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+        h1 {
+        page-break-before: always;
+    }
+    h1:first-of-type {
+        page-break-before: auto;
+    }
+</style>
+</head>
+<body>
+<h1>Product Attributes</h1>
+<table>
+    <thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+    <tbody>
+<tr>
+<td><strong>accessories.sku</strong></td>
+<td>Collection of SKUs that could be an accessory to originating SKU</td>
+<td>long</td>
+</tr>
+<tr>
+<td><strong>color</strong></td>
+<td>Product color</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>condition</strong></td>
+<td>Identifies if the product is new, refurbished or pre-owned</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>customerReviewAverage</strong></td>
+<td>Average “score” or ratings as submitted by reviewers</td>
+<td>float</td>
+</tr>
+<tr>
+<td><strong>customerReviewCount</strong></td>
+<td>Number of customer reviews</td>
+<td>integer</td>
+</tr>
+<tr>
+<td><strong>customerTopRated</strong></td>
+<td>Identifies if the product is top rated based on ratings from reviewers. If the Avg rating &gt;= 4.5 and Qty of ratings &gt;= 15, customerTopRated is set to be “true”, else is set to “false”</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td><strong>depth</strong></td>
+<td>Product depth (inches)</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>description</strong></td>
+<td>Product description</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>details.name</strong></td>
+<td>Collection of details about product (Example: whether a camera has a zoom)</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>details.value</strong></td>
+<td>Collection of values that support the product (Example: A camera’s number of Megapixels or amount of zoom)</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>digital</strong></td>
+<td>Identifies if product is available in a digital format</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td><strong>features.feature</strong></td>
+<td>Collection of product features</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>format</strong></td>
+<td>Identifies media product format</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>height</strong></td>
+<td>Product height (inches)</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>includedItemList.includedItem</strong></td>
+<td>Collection of items included with product (Example: Canon EOS 60D Digital SLR Camera, EF-S 18-135mm IS lens, Battery pack, Battery charger)</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>longDescription</strong></td>
+<td>Detailed product description</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>longDescriptionHtml</strong></td>
+<td>Detailed product description with HTML formatting</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>manufacturer</strong></td>
+<td>Product manufacturer</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>modelNumber</strong></td>
+<td>Manufacturer product model number</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>name</strong></td>
+<td>Product name</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>preowned</strong></td>
+<td>Identifies if product has been previously owned (used)</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td><strong>productVariations.sku</strong></td>
+<td>Collection of related SKUs that are variations (e.g. color, size) of the originating SKU</td>
+<td>long</td>
+</tr>
+<tr>
+<td><strong>quantityLimit</strong></td>
+<td>Maximum quantity of product that can be ordered</td>
+<td>integer</td>
+</tr>
+<tr>
+<td><strong>releaseDate</strong></td>
+<td>Date the product was released</td>
+<td>date</td>
+</tr>
+<tr>
+<td><strong>shortDescription</strong></td>
+<td>Brief product description</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>shortDescriptionHtml</strong></td>
+<td>Brief product description (HTML formatting)</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>sku</strong></td>
+<td>Best Buy unique 7-digit product identifier</td>
+<td>long</td>
+</tr>
+<tr>
+<td><strong>upc</strong></td>
+<td>Universal Product Code (UPC)</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>warrantyLabor</strong></td>
+<td>Manufacture labor warranty description</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>warrantyParts</strong></td>
+<td>Manufacture parts warranty description</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>weight</strong></td>
+<td>Product weight</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>width</strong></td>
+<td>Product width (inches)</td>
+<td>string</td>
+</tr>
+</tbody></table>
+<h1>Product Pricing</h1>
+<table>
+    <thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>contracts.type</strong></td>
+<td>Type of contract for Mobile phone</td>
+</tr>
+<tr>
+<td><strong>contracts.prices</strong></td>
+<td>Regular and current monthly contract pricing for Mobile phone</td>
+</tr>
+<tr>
+<td><strong>contracts.priceNote</strong></td>
+<td>Description of contract pricing for Mobile phone</td>
+</tr>
+<tr>
+<td><strong>dollarSavings</strong></td>
+<td>Identifies amount saved</td>
+</tr>
+<tr>
+<td><strong>lowPriceGuarantee</strong></td>
+<td>Identifies if a product qualifies for the Best Buy low price guarantee</td>
+</tr>
+<tr>
+<td><strong>onSale</strong></td>
+<td>Identifies if sale price is less than regular price</td>
+</tr>
+<tr>
+<td><strong>percentSavings</strong></td>
+<td>Identifies the percent saved between the regularPrice and salePrice</td>
+</tr>
+<tr>
+<td><strong>priceRestriction</strong></td>
+<td>Identifies product sale price display restrictions: <li>MAP restriction identifies Minimum Advertised Price; actual selling price may not be shown until prodcut is added to cart</li><li>ICR restriction identifies In-Checkout Rebate Price; actual selling price may not be shown until checkout</li></td>
+</tr>
+<tr>
+<td><strong>priceUpdateDate</strong></td>
+<td>Date and time product price was last updated</td>
+</tr>
+<tr>
+<td><strong>priceWithPlan.newTwoYearPlan</strong></td>
+<td>Mobile phone price when purchased with new 2-year plan</td>
+</tr>
+<tr>
+<td><strong>priceWithPlan.upgradeTwoYearPlan</strong></td>
+<td>Mobile phone price when purchased with 2-year upgrade plan</td>
+</tr>
+<tr>
+<td><strong>priceWithPlan.newTwoYearPlanSalePrice</strong></td>
+<td>Mobile phone sale price when purchased with 2-year plan</td>
+</tr>
+<tr>
+<td><strong>priceWithPlan.upgradeTwoYearPlanSalePrice</strong></td>
+<td>Mobile phone sale price when purchased with 2-year upgrade plan</td>
+</tr>
+<tr>
+<td><strong>priceWithPlan.newTwoYearPlanRegularPrice</strong></td>
+<td>Mobile phone price when purchased with new 2-year plan</td>
+</tr>
+<tr>
+<td><strong>priceWithPlan.upgradeTwoYearPlanRegularPrice</strong></td>
+<td>Mobile phone price when purchased with 2-year upgrade plan</td>
+</tr>
+<tr>
+<td><strong>regularPrice</strong></td>
+<td>Product’s regular selling price</td>
+</tr>
+<tr>
+<td><strong>salePrice</strong></td>
+<td>Current item selling price</td>
+</tr>
+</tbody>
+</table>
+<h1>Product Availability</h1>
+<table>
+    <thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>friendsAndFamilyPickup</strong></td>
+<td>Identifies if a product is eligible for friends and family pickup</td>
+</tr>
+<tr>
+<td><strong>homeDelivery</strong></td>
+<td>Identifies if a product must be fulfilled using home delivery instead of shipping</td>
+</tr>
+<tr>
+<td><strong>inStoreAvailability</strong></td>
+<td>Identifies if a product is available for purchase in a Best Buy store</td>
+</tr>
+<tr>
+<td><strong>inStoreAvailabilityUpdateDate</strong></td>
+<td>Provides date and time inStoreAvailability last updated</td>
+</tr>
+<tr>
+<td><strong>inStorePickup</strong></td>
+<td>Identifies if a product can be purchased online and picked up in a store</td>
+</tr>
+<tr>
+<td><strong>onlineAvailability</strong></td>
+<td>Identifies if a product can be purchased online</td>
+</tr>
+<tr>
+<td><strong>onlineAvailabilityUpdateDate</strong></td>
+<td>Provides date and time onlineAvailability was last updated</td>
+</tr>
+<tr>
+<td><strong>orderable</strong></td>
+<td>Product ordering status</td>
+</tr>
+<tr>
+<td><strong>specialOrder</strong></td>
+<td>Identifies whether a product will require special handling for delivery</td>
+</tr>
+</tbody>
+</table>
+<h1>Product Categorisations</h1>
+<table>
+    <thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>class</strong></td>
+<td>Class name</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>classId</strong></td>
+<td>Class identifiers</td>
+<td>integer</td>
+</tr>
+<tr>
+<td><strong>department</strong></td>
+<td>Department name</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>departmentId</strong></td>
+<td>Department identifiers</td>
+<td>integer</td>
+</tr>
+<tr>
+<td><strong>subclass</strong></td>
+<td>Subclass name</td>
+<td>string</td>
+</tr>
+<tr>
+<td><strong>subclassId</strong></td>
+<td>Subclass identifier</td>
+<td>integer</td>
+</tr>
+</tbody>
+</table>
+<h1>Product Type</h1>
+<table>
+    <thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>blackTie</strong></td>
+<td>Extended warranty services provided by the Best Buy GeekSquad team</td>
+</tr>
+<tr>
+<td><strong>bundle</strong></td>
+<td>A group of products; group can include both material and digital products</td>
+</tr>
+<tr>
+<td><strong>game</strong></td>
+<td>Games; includes both material and digital (downloadable) game products</td>
+</tr>
+<tr>
+<td><strong>hardgood</strong></td>
+<td>Products that are not of type music, movie, game, blackTie, software or bundle</td>
+</tr>
+<tr>
+<td><strong>movie</strong></td>
+<td>Movies; inclues both material and digital (downloadable) movie products</td>
+</tr>
+<tr>
+<td><strong>music</strong></td>
+<td>Music; includes both material and digital (downloadable) music products</td>
+</tr>
+<tr>
+<td><strong>software</strong></td>
+<td>Software; includes material and digital (downloadable) software products</td>
+</tr>
+</tbody>
+</table>
+<h1>Product Images</h1>
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>accessoriesImage</strong></td>
+<td>URL of accessories image</td>
+</tr>
+<tr>
+<td><strong>alternateViewsImage</strong></td>
+<td>URL of alternate image</td>
+</tr>
+<tr>
+<td><strong>angleImage</strong></td>
+<td>URL of product’s angle image</td>
+</tr>
+<tr>
+<td><strong>backViewImage</strong></td>
+<td>URL of rear image</td>
+</tr>
+<tr>
+<td><strong>energyGuideImage</strong></td>
+<td>URL of product’s EnergyGuide image</td>
+</tr>
+<tr>
+<td><strong>image</strong></td>
+<td>URL of BESTBUY.COM product detail page image</td>
+</tr>
+<tr>
+<td><strong>largeFrontImage</strong></td>
+<td>URL of large front image</td>
+</tr>
+<tr>
+<td><strong>largeImage</strong></td>
+<td>URL of image</td>
+</tr>
+<tr>
+<td><strong>leftViewImage</strong></td>
+<td>URL of left image</td>
+</tr>
+<tr>
+<td><strong>mediumImage</strong></td>
+<td>URL of medium image</td>
+</tr>
+<tr>
+<td><strong>remoteControlImage</strong></td>
+<td>URL of remote control image</td>
+</tr>
+<tr>
+<td><strong>rightViewImage</strong></td>
+<td>URL of right image</td>
+</tr>
+<tr>
+<td><strong>spin360Url</strong></td>
+<td>URL of 360-degree image</td>
+</tr>
+<tr>
+<td><strong>thumbnailImage</strong></td>
+<td>URL of image used on BESTBUY.COM listing pages</td>
+</tr>
+<tr>
+<td><strong>topViewImage</strong></td>
+<td>URL of top image</td>
+</tr>
+</tbody></table>
+</body>
+</html>

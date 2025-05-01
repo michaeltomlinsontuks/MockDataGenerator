@@ -1,0 +1,413 @@
+{
+  "from": 101,
+  "to": 200,
+  "currentPage": 2,
+  "total": 317,
+  "totalPages": 4,
+  "queryTime": "0.017",
+  "totalTime": "0.087",
+  "partial": false,
+  "canonicalUrl": "/v1/categories(id=\"abcat*\")?show=id,name&pageSize=100&page=2&format=json&apiKey=5FaxuIgE2GAMQmdVYivr4hGb",
+  "categories": [
+    {
+      "id": "abcat0409001",
+      "name": "Binoculars"
+    },
+    {
+      "id": "abcat0409003",
+      "name": "Telescopes"
+    },
+    {
+      "id": "abcat0410000",
+      "name": "Digital Camera Accessories"
+    },
+    {
+      "id": "abcat0410001",
+      "name": "Camera Bags & Cases"
+    },
+    {
+      "id": "abcat0410012",
+      "name": "Camera Batteries & Power"
+    },
+    {
+      "id": "abcat0410018",
+      "name": "Camera Lenses"
+    },
+    {
+      "id": "abcat0410020",
+      "name": "Filters"
+    },
+    {
+      "id": "abcat0410022",
+      "name": "Camcorder Accessories"
+    },
+    {
+      "id": "abcat0410024",
+      "name": "Camcorder Batteries & Power"
+    },
+    {
+      "id": "abcat0410045",
+      "name": "Camera Tripods & Support"
+    },
+    {
+      "id": "abcat0500000",
+      "name": "Computers & Tablets"
+    },
+    {
+      "id": "abcat0501000",
+      "name": "Desktop & All-in-One Computers"
+    },
+    {
+      "id": "abcat0501005",
+      "name": "All-in-One Computers"
+    },
+    {
+      "id": "abcat0502000",
+      "name": "Laptops"
+    },
+    {
+      "id": "abcat0503000",
+      "name": "Wi-Fi & Networking"
+    },
+    {
+      "id": "abcat0503002",
+      "name": "Wi-Fi Routers"
+    },
+    {
+      "id": "abcat0503007",
+      "name": "USB Wi-Fi Adapters"
+    },
+    {
+      "id": "abcat0503012",
+      "name": "Network Switches"
+    },
+    {
+      "id": "abcat0503013",
+      "name": "Modems"
+    },
+    {
+      "id": "abcat0504001",
+      "name": "Hard Drives, SSD & Storage"
+    },
+    {
+      "id": "abcat0504004",
+      "name": "Network Attached Storage (NAS)"
+    },
+    {
+      "id": "abcat0504005",
+      "name": "Optical Drives"
+    },
+    {
+      "id": "abcat0504010",
+      "name": "USB Flash Drives"
+    },
+    {
+      "id": "abcat0506000",
+      "name": "Memory (RAM)"
+    },
+    {
+      "id": "abcat0506001",
+      "name": "Desktop Memory"
+    },
+    {
+      "id": "abcat0506002",
+      "name": "Laptop Memory"
+    },
+    {
+      "id": "abcat0507000",
+      "name": "Computer Cards & Components"
+    },
+    {
+      "id": "abcat0507002",
+      "name": "GPUs / Video Graphics Cards"
+    },
+    {
+      "id": "abcat0507003",
+      "name": "Sound Cards"
+    },
+    {
+      "id": "abcat0507006",
+      "name": "Computer Cases"
+    },
+    {
+      "id": "abcat0507007",
+      "name": "Fans, Heatsinks & Cooling"
+    },
+    {
+      "id": "abcat0507008",
+      "name": "Motherboards"
+    },
+    {
+      "id": "abcat0507009",
+      "name": "Power Supplies"
+    },
+    {
+      "id": "abcat0507010",
+      "name": "CPUs / Processors"
+    },
+    {
+      "id": "abcat0508000",
+      "name": "Software"
+    },
+    {
+      "id": "abcat0508001",
+      "name": "Operating Systems"
+    },
+    {
+      "id": "abcat0508003",
+      "name": "Business & Office Software"
+    },
+    {
+      "id": "abcat0508009",
+      "name": "Office Software Suites"
+    },
+    {
+      "id": "abcat0508013",
+      "name": "Tax & Accounting Software"
+    },
+    {
+      "id": "abcat0508014",
+      "name": "Personal Finance Software"
+    },
+    {
+      "id": "abcat0508015",
+      "name": "Accounting & Bookkeeping Software"
+    },
+    {
+      "id": "abcat0508016",
+      "name": "Tax Preparation Software"
+    },
+    {
+      "id": "abcat0508018",
+      "name": "Design & Photography Software"
+    },
+    {
+      "id": "abcat0508025",
+      "name": "Photo Editing Software"
+    },
+    {
+      "id": "abcat0508026",
+      "name": "Video Editing Software"
+    },
+    {
+      "id": "abcat0508028",
+      "name": "Hobby & Leisure Software"
+    },
+    {
+      "id": "abcat0508042",
+      "name": "Antivirus & Security Software"
+    },
+    {
+      "id": "abcat0508045",
+      "name": "Internet Security Software"
+    },
+    {
+      "id": "abcat0509000",
+      "name": "Monitors"
+    },
+    {
+      "id": "abcat0511001",
+      "name": "Printers, Ink & Toner"
+    },
+    {
+      "id": "abcat0511002",
+      "name": "Inkjet Printers"
+    },
+    {
+      "id": "abcat0511003",
+      "name": "Laser Printers"
+    },
+    {
+      "id": "abcat0511004",
+      "name": "All-In-One Inkjet Printers"
+    },
+    {
+      "id": "abcat0511005",
+      "name": "All-In-One Laser Printers"
+    },
+    {
+      "id": "abcat0511006",
+      "name": "Photo Printers"
+    },
+    {
+      "id": "abcat0511007",
+      "name": "Scanners, Faxes & Copiers"
+    },
+    {
+      "id": "abcat0511008",
+      "name": "Flatbed Scanners"
+    },
+    {
+      "id": "abcat0511010",
+      "name": "Sheetfed Scanners"
+    },
+    {
+      "id": "abcat0511011",
+      "name": "Fax Machines & Copiers"
+    },
+    {
+      "id": "abcat0513000",
+      "name": "Mice & Keyboards"
+    },
+    {
+      "id": "abcat0513001",
+      "name": "Wireless & Bluetooth Mice"
+    },
+    {
+      "id": "abcat0513002",
+      "name": "Wired & USB Mice"
+    },
+    {
+      "id": "abcat0513004",
+      "name": "Computer Keyboards"
+    },
+    {
+      "id": "abcat0513005",
+      "name": "Keyboard & Mouse Combos"
+    },
+    {
+      "id": "abcat0513006",
+      "name": "Drawing Tablets"
+    },
+    {
+      "id": "abcat0514000",
+      "name": "Internet Services"
+    },
+    {
+      "id": "abcat0515000",
+      "name": "Computer Accessories & Peripherals"
+    },
+    {
+      "id": "abcat0515008",
+      "name": "Computer Cleaning & Repair"
+    },
+    {
+      "id": "abcat0515012",
+      "name": "Cables & Connectors"
+    },
+    {
+      "id": "abcat0515013",
+      "name": "USB Cables & Adapters"
+    },
+    {
+      "id": "abcat0515016",
+      "name": "Ethernet Cables"
+    },
+    {
+      "id": "abcat0515020",
+      "name": "PC Gaming Controllers"
+    },
+    {
+      "id": "abcat0515023",
+      "name": "Joysticks"
+    },
+    {
+      "id": "abcat0515024",
+      "name": "Racing Wheels"
+    },
+    {
+      "id": "abcat0515025",
+      "name": "Laptop Accessories"
+    },
+    {
+      "id": "abcat0515028",
+      "name": "Laptop Bags & Cases"
+    },
+    {
+      "id": "abcat0515031",
+      "name": "Monitor Mounts & Stands"
+    },
+    {
+      "id": "abcat0515032",
+      "name": "Mouse & Wrist Pads"
+    },
+    {
+      "id": "abcat0515039",
+      "name": "Computer Speakers"
+    },
+    {
+      "id": "abcat0515040",
+      "name": "Computer Headsets"
+    },
+    {
+      "id": "abcat0515041",
+      "name": "Computer Microphones"
+    },
+    {
+      "id": "abcat0515042",
+      "name": "Surge Protectors & Power"
+    },
+    {
+      "id": "abcat0515043",
+      "name": "Battery Backup (UPS)"
+    },
+    {
+      "id": "abcat0515044",
+      "name": "Surge Protectors"
+    },
+    {
+      "id": "abcat0515046",
+      "name": "Webcams"
+    },
+    {
+      "id": "abcat0700000",
+      "name": "Video Games"
+    },
+    {
+      "id": "abcat0701012",
+      "name": "Xbox One Digital"
+    },
+    {
+      "id": "abcat0712000",
+      "name": "PC Gaming"
+    },
+    {
+      "id": "abcat0714014",
+      "name": "Vehicles & Remote Control Toys"
+    },
+    {
+      "id": "abcat0715000",
+      "name": "Video Game Accessories"
+    },
+    {
+      "id": "abcat0800000",
+      "name": "Cell Phones"
+    },
+    {
+      "id": "abcat0801002",
+      "name": "Prepaid Phones & Plans"
+    },
+    {
+      "id": "abcat0801003",
+      "name": "Prepaid Phone Cards"
+    },
+    {
+      "id": "abcat0802000",
+      "name": "Telephones & Communication"
+    },
+    {
+      "id": "abcat0802001",
+      "name": "Cordless Telephones"
+    },
+    {
+      "id": "abcat0802002",
+      "name": "Corded Telephones"
+    },
+    {
+      "id": "abcat0802004",
+      "name": "VoIP"
+    },
+    {
+      "id": "abcat0802005",
+      "name": "Multi-Line Telephones"
+    },
+    {
+      "id": "abcat0802006",
+      "name": "Conferencing Telephones"
+    },
+    {
+      "id": "abcat0804000",
+      "name": "Two-Way Radios"
+    }
+  ]
+}

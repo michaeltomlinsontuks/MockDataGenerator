@@ -1,0 +1,413 @@
+{
+  "from": 201,
+  "to": 300,
+  "currentPage": 3,
+  "total": 317,
+  "totalPages": 4,
+  "queryTime": "0.013",
+  "totalTime": "0.024",
+  "partial": false,
+  "canonicalUrl": "/v1/categories(id=\"abcat*\")?show=id,name&pageSize=100&page=3&format=json&apiKey=5FaxuIgE2GAMQmdVYivr4hGb",
+  "categories": [
+    {
+      "id": "abcat0805000",
+      "name": "Office"
+    },
+    {
+      "id": "abcat0805001",
+      "name": "Calculators"
+    },
+    {
+      "id": "abcat0805003",
+      "name": "Voice Recorders"
+    },
+    {
+      "id": "abcat0805005",
+      "name": "Label Makers"
+    },
+    {
+      "id": "abcat0805006",
+      "name": "Shredders"
+    },
+    {
+      "id": "abcat0807000",
+      "name": "Ink & Toner"
+    },
+    {
+      "id": "abcat0807001",
+      "name": "Printer Ink"
+    },
+    {
+      "id": "abcat0807009",
+      "name": "Printer Toner"
+    },
+    {
+      "id": "abcat0808000",
+      "name": "Printer Paper"
+    },
+    {
+      "id": "abcat0808005",
+      "name": "Multipurpose Paper"
+    },
+    {
+      "id": "abcat0808006",
+      "name": "Photo-Quality Paper"
+    },
+    {
+      "id": "abcat0809000",
+      "name": "Office Furniture"
+    },
+    {
+      "id": "abcat0809001",
+      "name": "Office Chair Mats"
+    },
+    {
+      "id": "abcat0809002",
+      "name": "Office Chairs"
+    },
+    {
+      "id": "abcat0809004",
+      "name": "Desks"
+    },
+    {
+      "id": "abcat0811002",
+      "name": "Cell Phone Accessories"
+    },
+    {
+      "id": "abcat0811004",
+      "name": "Cell Phone Chargers & Cables"
+    },
+    {
+      "id": "abcat0811006",
+      "name": "Cell Phone Cases"
+    },
+    {
+      "id": "abcat0811007",
+      "name": "Cell Phone A/V Adapters"
+    },
+    {
+      "id": "abcat0811011",
+      "name": "Telephone Accessories"
+    },
+    {
+      "id": "abcat0811012",
+      "name": "Cordless Phone Batteries"
+    },
+    {
+      "id": "abcat0811013",
+      "name": "Cordless Phone Headsets"
+    },
+    {
+      "id": "abcat0811014",
+      "name": "Phone Cords"
+    },
+    {
+      "id": "abcat0900000",
+      "name": "Appliances"
+    },
+    {
+      "id": "abcat0901000",
+      "name": "Refrigerators"
+    },
+    {
+      "id": "abcat0901001",
+      "name": "Bottom-Freezer Refrigerators"
+    },
+    {
+      "id": "abcat0901002",
+      "name": "Mini Fridges"
+    },
+    {
+      "id": "abcat0901003",
+      "name": "Counter-Depth Refrigerators"
+    },
+    {
+      "id": "abcat0901004",
+      "name": "French Door Refrigerators"
+    },
+    {
+      "id": "abcat0901005",
+      "name": "Side-by-Side Refrigerators"
+    },
+    {
+      "id": "abcat0901006",
+      "name": "Top-Freezer Refrigerators"
+    },
+    {
+      "id": "abcat0901007",
+      "name": "Wine Coolers & Accessories"
+    },
+    {
+      "id": "abcat0902000",
+      "name": "Freezers & Ice Makers"
+    },
+    {
+      "id": "abcat0902001",
+      "name": "Chest Freezers"
+    },
+    {
+      "id": "abcat0902002",
+      "name": "Upright Freezers"
+    },
+    {
+      "id": "abcat0902003",
+      "name": "Ice Makers"
+    },
+    {
+      "id": "abcat0903000",
+      "name": "Microwaves"
+    },
+    {
+      "id": "abcat0903001",
+      "name": "Over-the-Range Microwaves"
+    },
+    {
+      "id": "abcat0903002",
+      "name": "Compact Microwaves"
+    },
+    {
+      "id": "abcat0904000",
+      "name": "Ranges, Cooktops & Ovens"
+    },
+    {
+      "id": "abcat0904001",
+      "name": "Cooktops"
+    },
+    {
+      "id": "abcat0904002",
+      "name": "Range Hoods & Downdraft Ventilation"
+    },
+    {
+      "id": "abcat0904003",
+      "name": "Ranges"
+    },
+    {
+      "id": "abcat0904004",
+      "name": "Wall Ovens"
+    },
+    {
+      "id": "abcat0904005",
+      "name": "Warming Drawers"
+    },
+    {
+      "id": "abcat0905000",
+      "name": "Dishwashers"
+    },
+    {
+      "id": "abcat0905001",
+      "name": "Built-In Dishwashers"
+    },
+    {
+      "id": "abcat0905002",
+      "name": "Portable & Countertop Dishwashers"
+    },
+    {
+      "id": "abcat0906001",
+      "name": "Trash Compactors"
+    },
+    {
+      "id": "abcat0906002",
+      "name": "Sink Garbage Disposals"
+    },
+    {
+      "id": "abcat0907001",
+      "name": "Air Conditioners"
+    },
+    {
+      "id": "abcat0907002",
+      "name": "Air Conditioners with Heaters"
+    },
+    {
+      "id": "abcat0907003",
+      "name": "In-Wall Air Conditioners"
+    },
+    {
+      "id": "abcat0907004",
+      "name": "Portable Air Conditioners"
+    },
+    {
+      "id": "abcat0907005",
+      "name": "Window Air Conditioners"
+    },
+    {
+      "id": "abcat0907006",
+      "name": "Fans"
+    },
+    {
+      "id": "abcat0907007",
+      "name": "Space Heaters"
+    },
+    {
+      "id": "abcat0908001",
+      "name": "Air Purifiers"
+    },
+    {
+      "id": "abcat0908002",
+      "name": "Dehumidifiers"
+    },
+    {
+      "id": "abcat0908003",
+      "name": "Humidifiers"
+    },
+    {
+      "id": "abcat0910000",
+      "name": "Washers & Dryers"
+    },
+    {
+      "id": "abcat0910001",
+      "name": "Washing Machines"
+    },
+    {
+      "id": "abcat0910002",
+      "name": "Front-Loading Washers"
+    },
+    {
+      "id": "abcat0910003",
+      "name": "Top-Loading Washers"
+    },
+    {
+      "id": "abcat0910004",
+      "name": "Dryers"
+    },
+    {
+      "id": "abcat0910005",
+      "name": "Stacked Laundry Centers"
+    },
+    {
+      "id": "abcat0910006",
+      "name": "Pedestals & Organization"
+    },
+    {
+      "id": "abcat0911000",
+      "name": "Vacuum Cleaners & Floor Care"
+    },
+    {
+      "id": "abcat0911003",
+      "name": "Commercial & Garage Vacuums"
+    },
+    {
+      "id": "abcat0911004",
+      "name": "Handheld & Stick Vacuums"
+    },
+    {
+      "id": "abcat0911006",
+      "name": "Upright Vacuums"
+    },
+    {
+      "id": "abcat0911007",
+      "name": "Steam Mops"
+    },
+    {
+      "id": "abcat0911008",
+      "name": "Carpet Cleaners"
+    },
+    {
+      "id": "abcat0912000",
+      "name": "Small Kitchen Appliances"
+    },
+    {
+      "id": "abcat0912002",
+      "name": "Irons"
+    },
+    {
+      "id": "abcat0912004",
+      "name": "Steamers & Presses"
+    },
+    {
+      "id": "abcat0912005",
+      "name": "Coffee Machines"
+    },
+    {
+      "id": "abcat0912006",
+      "name": "Espresso Machines"
+    },
+    {
+      "id": "abcat0912011",
+      "name": "Blenders & Juicers"
+    },
+    {
+      "id": "abcat0912012",
+      "name": "Slow Cookers & Roaster Ovens"
+    },
+    {
+      "id": "abcat0912013",
+      "name": "Air Fryers & Deep Fryers"
+    },
+    {
+      "id": "abcat0912014",
+      "name": "Electric Grills & Griddles"
+    },
+    {
+      "id": "abcat0912016",
+      "name": "Food Processors"
+    },
+    {
+      "id": "abcat0912017",
+      "name": "Vacuum Sealers"
+    },
+    {
+      "id": "abcat0912018",
+      "name": "Mixers & Mixer Accessories"
+    },
+    {
+      "id": "abcat0912019",
+      "name": "Popcorn Makers"
+    },
+    {
+      "id": "abcat0912020",
+      "name": "Steamers, Rice Cookers & Pressure Cookers"
+    },
+    {
+      "id": "abcat0912022",
+      "name": "Toaster Ovens & Toasters"
+    },
+    {
+      "id": "abcat0912023",
+      "name": "Toasters"
+    },
+    {
+      "id": "abcat0912024",
+      "name": "Waffle Makers"
+    },
+    {
+      "id": "abcat0912025",
+      "name": "Kitchen Gadgets"
+    },
+    {
+      "id": "abcat0912027",
+      "name": "Bread Machines"
+    },
+    {
+      "id": "abcat0913004",
+      "name": "Safes"
+    },
+    {
+      "id": "abcat0915000",
+      "name": "Personal Care & Beauty"
+    },
+    {
+      "id": "abcat0915001",
+      "name": "Spa & Relaxation"
+    },
+    {
+      "id": "abcat0915002",
+      "name": "Bath & Foot Spas"
+    },
+    {
+      "id": "abcat0915003",
+      "name": "Massagers"
+    },
+    {
+      "id": "abcat0915004",
+      "name": "Sleep Solutions"
+    },
+    {
+      "id": "abcat0915005",
+      "name": "Shaving & Hair Removal"
+    },
+    {
+      "id": "abcat0915006",
+      "name": "Men's Shavers"
+    }
+  ]
+}

@@ -1,0 +1,413 @@
+{
+  "from": 1,
+  "to": 100,
+  "currentPage": 1,
+  "total": 317,
+  "totalPages": 4,
+  "queryTime": "0.018",
+  "totalTime": "0.033",
+  "partial": false,
+  "canonicalUrl": "/v1/categories(id=\"abcat*\")?show=id,name&pageSize=100&format=json&apiKey=5FaxuIgE2GAMQmdVYivr4hGb",
+  "categories": [
+    {
+      "id": "abcat0010000",
+      "name": "Gift Ideas"
+    },
+    {
+      "id": "abcat0100000",
+      "name": "TV & Home Theater"
+    },
+    {
+      "id": "abcat0101000",
+      "name": "TVs"
+    },
+    {
+      "id": "abcat0101001",
+      "name": "All Flat-Screen TVs"
+    },
+    {
+      "id": "abcat0102000",
+      "name": "Blu-ray & DVD Players"
+    },
+    {
+      "id": "abcat0102003",
+      "name": "Blu-ray Players"
+    },
+    {
+      "id": "abcat0102005",
+      "name": "DVD Players"
+    },
+    {
+      "id": "abcat0104000",
+      "name": "Digital TV Tuners & Converters"
+    },
+    {
+      "id": "abcat0105000",
+      "name": "TV & Internet Service Providers"
+    },
+    {
+      "id": "abcat0106000",
+      "name": "TV Stands, Mounts & Furniture"
+    },
+    {
+      "id": "abcat0106001",
+      "name": "TV Stands"
+    },
+    {
+      "id": "abcat0106002",
+      "name": "Speaker Stands"
+    },
+    {
+      "id": "abcat0106004",
+      "name": "TV Mounts"
+    },
+    {
+      "id": "abcat0106007",
+      "name": "Speaker Mounts"
+    },
+    {
+      "id": "abcat0106008",
+      "name": "A/V Component Racks & Shelving"
+    },
+    {
+      "id": "abcat0106009",
+      "name": "Home Theater Seating"
+    },
+    {
+      "id": "abcat0106010",
+      "name": "Media Storage"
+    },
+    {
+      "id": "abcat0106011",
+      "name": "Portable CD & DVD Storage"
+    },
+    {
+      "id": "abcat0106015",
+      "name": "Media Cabinets"
+    },
+    {
+      "id": "abcat0106021",
+      "name": "Gaming Chairs"
+    },
+    {
+      "id": "abcat0107000",
+      "name": "TV & Home Theater Accessories"
+    },
+    {
+      "id": "abcat0107004",
+      "name": "TV Antennas"
+    },
+    {
+      "id": "abcat0107015",
+      "name": "A/V Cables & Connectors"
+    },
+    {
+      "id": "abcat0107020",
+      "name": "HDMI Cables"
+    },
+    {
+      "id": "abcat0107032",
+      "name": "Speaker Selector Switches"
+    },
+    {
+      "id": "abcat0107033",
+      "name": "Subwoofer Accessories"
+    },
+    {
+      "id": "abcat0107034",
+      "name": "TV & Media Cleaning & Care"
+    },
+    {
+      "id": "abcat0107036",
+      "name": "TV Screen Protectors & Cleaners"
+    },
+    {
+      "id": "abcat0107038",
+      "name": "VCR Cleaners"
+    },
+    {
+      "id": "abcat0107039",
+      "name": "Remote Controls"
+    },
+    {
+      "id": "abcat0107040",
+      "name": "Universal TV Remotes"
+    },
+    {
+      "id": "abcat0107045",
+      "name": "A/V Surge Protectors & Power"
+    },
+    {
+      "id": "abcat0200000",
+      "name": "Audio & Headphones"
+    },
+    {
+      "id": "abcat0201010",
+      "name": "MP3 Players"
+    },
+    {
+      "id": "abcat0202001",
+      "name": "CD Players & Recorders"
+    },
+    {
+      "id": "abcat0202003",
+      "name": "Receivers"
+    },
+    {
+      "id": "abcat0202004",
+      "name": "Amplifiers"
+    },
+    {
+      "id": "abcat0202007",
+      "name": "Turntables & Accessories"
+    },
+    {
+      "id": "abcat0203000",
+      "name": "Home Theater & Stereo Systems"
+    },
+    {
+      "id": "abcat0204000",
+      "name": "Headphones"
+    },
+    {
+      "id": "abcat0205000",
+      "name": "Speakers"
+    },
+    {
+      "id": "abcat0205001",
+      "name": "Bookshelf Speakers"
+    },
+    {
+      "id": "abcat0205002",
+      "name": "Center-Channel Speakers"
+    },
+    {
+      "id": "abcat0205003",
+      "name": "Floor Speakers"
+    },
+    {
+      "id": "abcat0205004",
+      "name": "Speaker Systems"
+    },
+    {
+      "id": "abcat0205005",
+      "name": "In-Wall Speakers"
+    },
+    {
+      "id": "abcat0205006",
+      "name": "Outdoor Speakers"
+    },
+    {
+      "id": "abcat0205007",
+      "name": "Sound Bars"
+    },
+    {
+      "id": "abcat0205008",
+      "name": "Subwoofer Speakers"
+    },
+    {
+      "id": "abcat0206001",
+      "name": "Boomboxes"
+    },
+    {
+      "id": "abcat0206002",
+      "name": "CD & Cassette Players"
+    },
+    {
+      "id": "abcat0206003",
+      "name": "Alarm Clock Radios"
+    },
+    {
+      "id": "abcat0206005",
+      "name": "Emergency Radios"
+    },
+    {
+      "id": "abcat0206006",
+      "name": "Portable Radios"
+    },
+    {
+      "id": "abcat0207000",
+      "name": "Musical Instruments"
+    },
+    {
+      "id": "abcat0207005",
+      "name": "Karaoke"
+    },
+    {
+      "id": "abcat0208000",
+      "name": "Home Audio Accessories"
+    },
+    {
+      "id": "abcat0208002",
+      "name": "Alkaline Batteries"
+    },
+    {
+      "id": "abcat0208003",
+      "name": "Lithium Batteries"
+    },
+    {
+      "id": "abcat0208005",
+      "name": "Rechargeable Batteries"
+    },
+    {
+      "id": "abcat0208006",
+      "name": "Specialty Batteries"
+    },
+    {
+      "id": "abcat0208015",
+      "name": "Speaker Accessories"
+    },
+    {
+      "id": "abcat0208016",
+      "name": "In-Wall Speaker Accessories"
+    },
+    {
+      "id": "abcat0208024",
+      "name": "Musical Instrument Accessories"
+    },
+    {
+      "id": "abcat0208031",
+      "name": "FM Transmitters"
+    },
+    {
+      "id": "abcat0300000",
+      "name": "Car Electronics & GPS"
+    },
+    {
+      "id": "abcat0301000",
+      "name": "GPS Navigation & Accessories"
+    },
+    {
+      "id": "abcat0301002",
+      "name": "In-Dash with GPS"
+    },
+    {
+      "id": "abcat0301005",
+      "name": "Marine GPS & Fishfinders"
+    },
+    {
+      "id": "abcat0301006",
+      "name": "Fitness Smartwatches"
+    },
+    {
+      "id": "abcat0301014",
+      "name": "Car GPS"
+    },
+    {
+      "id": "abcat0302000",
+      "name": "Car Audio"
+    },
+    {
+      "id": "abcat0302001",
+      "name": "Car Amplifiers"
+    },
+    {
+      "id": "abcat0302002",
+      "name": "2-Channel Amps"
+    },
+    {
+      "id": "abcat0302003",
+      "name": "Mono Subwoofer Amps"
+    },
+    {
+      "id": "abcat0302004",
+      "name": "Multi-Channel Amps"
+    },
+    {
+      "id": "abcat0302005",
+      "name": "Car Speakers"
+    },
+    {
+      "id": "abcat0302011",
+      "name": "CB Radios & Scanners"
+    },
+    {
+      "id": "abcat0302012",
+      "name": "Car Stereo Receivers"
+    },
+    {
+      "id": "abcat0302019",
+      "name": "Satellite Radios"
+    },
+    {
+      "id": "abcat0302034",
+      "name": "Car Subwoofers & Enclosures"
+    },
+    {
+      "id": "abcat0302036",
+      "name": "Car Subwoofer Boxes & Enclosures"
+    },
+    {
+      "id": "abcat0302037",
+      "name": "Component Subwoofers"
+    },
+    {
+      "id": "abcat0303000",
+      "name": "Car Video & DVD"
+    },
+    {
+      "id": "abcat0303001",
+      "name": "In-Dash with DVD"
+    },
+    {
+      "id": "abcat0304000",
+      "name": "Remote Start & Security Systems"
+    },
+    {
+      "id": "abcat0305000",
+      "name": "Radar Detectors"
+    },
+    {
+      "id": "abcat0307001",
+      "name": "GPS Accessories"
+    },
+    {
+      "id": "abcat0307013",
+      "name": "Cassette Adapters"
+    },
+    {
+      "id": "abcat0307019",
+      "name": "Car Video Accessories"
+    },
+    {
+      "id": "abcat0400000",
+      "name": "Cameras, Camcorders & Drones"
+    },
+    {
+      "id": "abcat0401000",
+      "name": "Digital Cameras"
+    },
+    {
+      "id": "abcat0401001",
+      "name": "Point & Shoot Cameras"
+    },
+    {
+      "id": "abcat0401005",
+      "name": "DSLR Cameras"
+    },
+    {
+      "id": "abcat0403000",
+      "name": "Action Cameras & Camcorders"
+    },
+    {
+      "id": "abcat0403004",
+      "name": "Traditional Camcorders"
+    },
+    {
+      "id": "abcat0404000",
+      "name": "Memory Cards"
+    },
+    {
+      "id": "abcat0404007",
+      "name": "Memory Card Readers & Adapters"
+    },
+    {
+      "id": "abcat0408000",
+      "name": "Digital Photo Frames"
+    },
+    {
+      "id": "abcat0409000",
+      "name": "Binoculars, Telescopes & Optics"
+    }
+  ]
+}
