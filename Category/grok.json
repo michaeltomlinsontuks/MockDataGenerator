@@ -1,0 +1,32 @@
+{
+  "categories": [
+    {
+      "id": "abcat0100000",
+      "name": "TV & Home Theater"
+    },
+    {
+      "id": "abcat0200000",
+      "name": "Audio & Headphones"
+    },
+    {
+      "id": "abcat0300000",
+      "name": "Car Electronics & GPS"
+    },
+    {
+      "id": "abcat0400000",
+      "name": "Cameras, Camcorders & Drones"
+    },
+    {
+      "id": "abcat0500000",
+      "name": "Computers & Tablets"
+    },
+    {
+      "id": "abcat0800000",
+      "name": "Cell Phones"
+    },
+    {
+      "id": "abcat0900000",
+      "name": "Appliances"
+    }
+  ]
+}
